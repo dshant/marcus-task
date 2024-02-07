@@ -1,0 +1,43 @@
+.main {
+  @apply bg-white border border-[#eeeeee] p-5 mt-5 rounded-md;
+}
+
+.heading {
+  @apply text-lg font-semibold mb-5;
+}
+
+.tableContainer {
+  @apply relative overflow-x-auto shadow-md sm:rounded-lg;
+}
+
+.table {
+  @apply backdrop:w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 w-full;
+}
+
+.tableHead {
+  @apply text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400;
+}
+
+.input {
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+}
+
+.head {
+  @apply px-6 py-3;
+}
+
+.tableData {
+  @apply px-6 py-4;
+}
+
+.tableRow {
+  @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600;
+}
+
+.edit {
+  @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+}
+
+.remove {
+  @apply font-medium text-red-600 dark:text-red-500 hover:underline ms-3;
+}

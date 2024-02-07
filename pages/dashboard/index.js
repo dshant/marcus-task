@@ -1,4 +1,3 @@
-// Importing necessary components and libraries
 import React from "react";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
@@ -47,32 +46,31 @@ const Dashboard = () => {
         {/* Bar chart */}
         <div className="w-full">
           <ResponsiveContainer>
-        <BarChart
-         
-          data={BAR_GRAPH_DATA}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Bar
-            dataKey="uv"
-            fill="#8884d8"
-            shape={<TriangleBar />}
-            label={{ position: "top" }}
-          >
-            {/* Color cells */}
-            {BAR_GRAPH_DATA.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-            ))}
-          </Bar>
-        </BarChart>
-        </ResponsiveContainer>
+            <BarChart
+              data={BAR_GRAPH_DATA}
+              margin={{
+                top: 20,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Bar
+                dataKey="uv"
+                fill="#8884d8"
+                shape={<TriangleBar />}
+                label={{ position: "top" }}
+              >
+                {/* Color cells */}
+                {BAR_GRAPH_DATA.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
         {/* Responsive container for another bar chart */}
         <div className="barChart w-full">
@@ -107,7 +105,6 @@ const Dashboard = () => {
       {/* Wrapper for Line chart */}
       <div className="wrapperChart mt-20">
         <ResponsiveContainer width="100%" height="100%">
-          {/* Line chart */}
           <LineChart
             width={500}
             height={300}
@@ -125,7 +122,6 @@ const Dashboard = () => {
             <YAxis yAxisId="right" orientation="right" />
             <Tooltip />
             <Legend />
-            {/* Line 1 */}
             <Line
               yAxisId="left"
               type="monotone"
@@ -133,7 +129,6 @@ const Dashboard = () => {
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             />
-            {/* Line 2 */}
             <Line
               yAxisId="right"
               type="monotone"

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Team A",
+    "leader": "Alice",
+    "members": ["Bob", "Charlie"],
+    "location": "New York"
+  },
+  {
+    "id": 2,
+    "name": "Team B",
+    "leader": "Frank",
+    "members": ["Grace", "Hannah"],
+    "location": "Los Angeles"
+  },
+  {
+    "id": 3,
+    "name": "Team C",
+    "leader": "Kate",
+    "members": ["Liam", "Mia"],
+    "location": "Chicago"
+  }
+]
